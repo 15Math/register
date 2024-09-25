@@ -1,0 +1,13 @@
+.inputsAut{
+    display: flex;
+    gap: 0.5rem;
+}
+.autChar{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #4A4E69;
+    font-weight: 600;
+    font-size: 20px;
+}

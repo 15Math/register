@@ -55,4 +55,9 @@ form{
 }
 .warning{
   font-weight: 400;
+  font-size: small;
+  color: red;
+}
+.comment{
+  font-weight: 400;
 }

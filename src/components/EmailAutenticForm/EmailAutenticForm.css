@@ -11,3 +11,8 @@
     font-weight: 600;
     font-size: 20px;
 }
+.userEmail{
+    font-size: small;
+    max-width: 20rem;
+    word-wrap: break-word;
+}

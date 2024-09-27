@@ -8,7 +8,6 @@ dotenv.config();
 
 const sendAut = async (req, res) => {
     const { userEmail } = req.body;
-    console.log(process.env.AUTH_EMAIL,process.env.AUTH_PASS)
     
     const codeGenerator = () => {
         return Math.floor(100000 + Math.random() * 900000).toString();
@@ -31,7 +30,7 @@ const sendAut = async (req, res) => {
         const configEmail = {
             from: process.env.AUTH_EMAIL,
             to: userEmail,
-            subject: `O seu código é: ${code.data}`, 
+            subject: `${code.data}`, 
             html: `
                 <h1>O seu código é: <strong>${code.data}</strong></h1>
                 <p>Digite esse código no cadastro para confirmar o seu email!</p>

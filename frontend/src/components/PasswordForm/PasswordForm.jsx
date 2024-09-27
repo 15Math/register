@@ -12,7 +12,7 @@ export default function PasswordForm(){
         try{ 
             const password = event.target.password.value;
             const passwordConfirm = event.target.passwordConfirm.value;
-            const response = await fetch('http://localhost:3000/checkPass',{
+            const response = await fetch('http://localhost:3333/checkPass',{
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'

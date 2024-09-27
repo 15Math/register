@@ -16,3 +16,15 @@
     max-width: 20rem;
     word-wrap: break-word;
 }
+.sendTokenBtn{
+    background-color: #79728b;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    border: none;
+    width: 50%;
+}
+.sendTokenBtn:hover{
+    background-color: #7b697c;
+    cursor: pointer;
+}

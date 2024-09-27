@@ -13,8 +13,8 @@ export default function FormEmail(){
         event.preventDefault();
         try{ 
 
-            const userEmail = event.target.email.value;
-            const response = await fetch('http://localhost:3000/sendAut',{
+            const userEmail = event.target.userEmail.value;
+            const response = await fetch('http://localhost:3333/sendAut',{
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'
@@ -29,7 +29,6 @@ export default function FormEmail(){
                 setWarningMessage(result.message);
                 return;
             }
-
             navigate("/emailAuntentic", {state:{userEmail}});
         }catch(error){
             console.error('Erro:', error);
@@ -47,7 +46,7 @@ export default function FormEmail(){
                 <p>Registre-se para continuar</p>
                 <div className="inputField">
                     <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" required/>
+                    <input type="email" name="userEmail" required/>
                 </div>
                 <input type="submit" value="Continuar" className="submitBtn"/>
                 {showWarning && <p className="warning">{warningMessage}</p>}

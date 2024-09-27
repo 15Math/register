@@ -20,7 +20,7 @@ export default function FormEmailAutentic(){
         event.preventDefault();
         const inputAut = autChars.join("");
         try{
-            const response = await fetch('http://localhost:3000/autVerif',{
+            const response = await fetch('http://localhost:3333/autVerif',{
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'
@@ -64,6 +64,7 @@ export default function FormEmailAutentic(){
                     </div>
                 </div>
                 <input type="submit" value="Continuar" className="submitBtn"/>
+                <button className="sendTokenBtn">Reenviar Token</button>
                 {showWarning && <p className="warning">Autentificador inválido</p>}
             </form>
         </div>
